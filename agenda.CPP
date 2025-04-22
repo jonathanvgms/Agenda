@@ -109,7 +109,7 @@ int ver_direc(char dir[])
    return(1);
 
 }
-//-------------- VERIFICA EL CUMPLEA¥OS ---------------------------------
+//-------------- VERIFICA EL CUMPLEAï¿½OS ---------------------------------
 int ver_cum(char cum[])
 {
 // const true = 1;
@@ -278,13 +278,13 @@ void generar(void)
 	     fflush(stdin);
 	     gets(regi.mail);
 	   }
-	   printf("\nCumplea¤os: ");
+	   printf("\nCumpleaï¿½os: ");
 	   fflush(stdin);
 	   gets(regi.cum);
 	   while (!ver_cum(regi.cum))
 	   {
 	     printf("EL INGRESO DE DATOS NO ES VALIDO");
-	     printf("\nCumplea¤os: ");
+	     printf("\nCumpleaï¿½os: ");
 	     fflush(stdin);
 	     gets(regi.cum);
 	   }
@@ -334,10 +334,10 @@ void submenu(void)
 //  if (!isdigit(pos))
  //   return;
   clrscr();
-  writexy("ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»",1,1);
-  writexy("º  1. -> Modificar   º",1,2);
-  writexy("º  2. -> Borrar      º",1,3);
-  writexy("ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼",1,4);
+  writexy("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»",1,1);
+  writexy("ï¿½  1. -> Modificar   ï¿½",1,2);
+  writexy("ï¿½  2. -> Borrar      ï¿½",1,3);
+  writexy("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼",1,4);
   printf("ELIJA UNA OPCION:  ");
   op2=getche();
   fclose(fpt);
@@ -381,9 +381,9 @@ void listar(void)
        else
 	  printf("E-Mail: NO TIENE \n");
        if (strcmp(regi.cum,""))
-	  printf("Cumplea¤os: %s \n",regi.cum);
+	  printf("Cumpleaï¿½os: %s \n",regi.cum);
        else
-	  printf("Cumplea¤os: NO TIENE \n");
+	  printf("Cumpleaï¿½os: NO TIENE \n");
        i++;
        if (i==5)
 	 {
@@ -493,9 +493,9 @@ void buscar(void)
 		else
 		  printf("E-Mail: NO TIENE \n");
 		if (strcmp(regi.cum,""))
-		  printf("Cumplea¤os: %s \n",regi.cum);
+		  printf("Cumpleaï¿½os: %s \n",regi.cum);
 		else
-		  printf("Cumplea¤os: NO TIENE \n");
+		  printf("Cumpleaï¿½os: NO TIENE \n");
 		ban=true;
 		bar=true;
 		i++;
@@ -514,9 +514,9 @@ void buscar(void)
 		else
 		  printf("E-Mail: NO TIENE \n");
 		if (strcmp(regi.cum,""))
-		  printf("Cumplea¤os: %s \n",regi.cum);
+		  printf("Cumpleaï¿½os: %s \n",regi.cum);
 		else
-		  printf("Cumplea¤os: NO TIENE \n");
+		  printf("Cumpleaï¿½os: NO TIENE \n");
 		ban=true;
 		bar=true;
 		i++;
@@ -532,9 +532,9 @@ void buscar(void)
 		else
 		  printf("E-Mail: NO TIENE \n");
 		if (strcmp(regi.cum,""))
-		  printf("Cumplea¤os: %s \n",regi.cum);
+		  printf("Cumpleaï¿½os: %s \n",regi.cum);
 		else
-		  printf("Cumplea¤os: NO TIENE \n");
+		  printf("Cumpleaï¿½os: NO TIENE \n");
 		ban=true;
 		bar=true;
 		i++;
@@ -550,9 +550,9 @@ void buscar(void)
 		else
 		  printf("Telefono: NO TIENE \n");
 		if (strcmp(regi.cum,""))
-		  printf("Cumplea¤os: %s \n",regi.cum);
+		  printf("Cumpleaï¿½os: %s \n",regi.cum);
 		else
-		  printf("Cumplea¤os: NO TIENE \n");
+		  printf("Cumpleaï¿½os: NO TIENE \n");
 
 		ban=true;
 		bar=true;
@@ -561,7 +561,7 @@ void buscar(void)
 	    if ((memchr(regi.cum,*clave, strlen(regi.cum))) && (ban==false))
 	      {
 		printf("%d\n",regi.pos);
-		printf("CUMPLEA¥OS:   %s\n",regi.cum);
+		printf("CUMPLEAï¿½OS:   %s\n",regi.cum);
 		printf("Nombre:   %s\n",regi.nombre);
 		printf("Direccion:  %s\n",regi.direccion);
 		if (strcmp(regi.tel,""))
@@ -569,9 +569,9 @@ void buscar(void)
 		else
 		  printf("Telefono: NO TIENE \n");
 		if (strcmp(regi.cum,""))
-		  printf("Cumplea¤os: %s \n",regi.cum);
+		  printf("Cumpleaï¿½os: %s \n",regi.cum);
 		else
-		  printf("Cumplea¤os: NO TIENE \n");
+		  printf("Cumpleaï¿½os: NO TIENE \n");
 		ban=true;
 		bar=true;
 		i++;
@@ -620,7 +620,7 @@ void modificar (int ind)
   printf("2)  Telefono: %s \n",regi.tel);
   printf("3)  Direccion: %s \n",regi.direccion);
   printf("4)  E-Mail: %s\n",regi.mail);
-  printf("5)  Cumplea¤os: %s\n",regi.cum);
+  printf("5)  Cumpleaï¿½os: %s\n",regi.cum);
   printf("\nELIJA EL CAMPO A MODIFICAR:   ");
   op=getche();
   switch (op)
@@ -732,8 +732,8 @@ void borrar(int ind)
   printf("2)  Telefono: %s \n",regi.tel);
   printf("3)  Direccion: %s \n",regi.direccion);
   printf("4)  E-Mail: %s\n",regi.mail);
-  printf("5)  Cumplea¤os: %s\n",regi.cum);
-  printf("¨DESEA ELIMINAR EL REGISTRO S=Si/N=No?:  ");
+  printf("5)  Cumpleaï¿½os: %s\n",regi.cum);
+  printf("ï¿½DESEA ELIMINAR EL REGISTRO S=Si/N=No?:  ");
   op=getche();
   op=toupper(op);
   if (op=='S')
@@ -826,7 +826,7 @@ void ord_nom(void)
 	 printf("Telefono: %s \n",regi.tel);
 	 printf("Direccion: %s \n",regi.direccion);
 	 printf("E-Mail: %s\n",regi.mail);
-	 printf("Cumplea¤os: %s \n",regi.cum);
+	 printf("Cumpleaï¿½os: %s \n",regi.cum);
 	 i++;
 	 if (i==5)
 	 {
@@ -864,7 +864,7 @@ int cantreg(void)
    fclose(fpt);
    return (curpos);
 }
-//---------------------- A¥ADE UN REGISTRO -------------------------------
+//---------------------- Aï¿½ADE UN REGISTRO -------------------------------
 void anadir(void)
 {
   char aux_nom[50],op;
@@ -924,7 +924,7 @@ void anadir(void)
 	     fflush(stdin);
 	     gets(regi.mail);
 	   }
-	   printf("\nCumplea¤os: ");
+	   printf("\nCumpleaï¿½os: ");
 	   fflush(stdin);
 	   gets(regi.cum);
 	   while (!ver_cum(regi.cum))
@@ -978,7 +978,7 @@ void del_file(void)
     }
   else
     {
-      writexy("¨DESEA ELIMINAR EL ARCHIVO S=Si/N=No?",2,19);
+      writexy("ï¿½DESEA ELIMINAR EL ARCHIVO S=Si/N=No?",2,19);
       op=getche();
       if (toupper(op)=='S')
 	{
@@ -995,12 +995,12 @@ void ayuda(void)
 {
 clrscr();
 printf(">>> AYUDA <<<\n");
-printf("ÍÍÍÍÍÍÍÍÍÍÍÍÍ\n\n");
+printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\n\n");
 printf("CREAR: Permite ingresar los datos de las personas que desea agregar a la agenda.");
 printf("ABRIR: Abre el archivo de la agenda.\n");
 printf("LISTAR: Muestra en pantalla los datos de las personas.\n");
 printf("BUSCAR: Mediante esta opcion usted puede realizar una busqueda\n");
-printf("A¥ADIR: Abre la agenda para agregar mas datos\n");
+printf("Aï¿½ADIR: Abre la agenda para agregar mas datos\n");
 printf("ORDENAR: Ordena la agenda por nombre.\n");
 printf("BORRAR: Elimina la agenda.\n\n");
 printf("MODIFICAR DATOS: Permite modificar los datos que han sido ingresados.\n");
@@ -1009,7 +1009,7 @@ printf("ESTAS DOS OPCIONES ESTAN DISPONIBLES AL LISTAR LA AGENDA, BUSCAR U ORDEN
 printf("CUANDO DICE \"Presione una tecla para continuar...\".\n");
 printf("SE APRETA ESCAPE LUEGO EL NUMERO DE REGISTRO Y DESPUES ENTER.\n\n");
 printf("FORMATO DE REGISTRO\n");
-printf("NOMBRE: PEPE\nTELEFONO: 41568251\nDIRECCION: AV EVERGREEN 111\nE-MAIL: PEPE._-@NOSE.COM\nCUMPLEA¥OS: 05/04  DD/MM \n\n");
+printf("NOMBRE: PEPE\nTELEFONO: 41568251\nDIRECCION: AV EVERGREEN 111\nE-MAIL: PEPE._-@NOSE.COM\nCUMPLEAï¿½OS: 05/04  DD/MM \n\n");
 printf("Presione una tecla para continuar ... ");
 fflush(stdin);
 getch();
@@ -1040,20 +1040,20 @@ char aux;
   clrscr();
  do {
   writexy("Esc=SALIR    F1=AYUDA                       UTILICE LAS FLECHAS PARA DESPLAZARSE",1,1);
-  writexy("ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»",5,4);
-  writexy("º  MENU                  º",5,5);
-  writexy("ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹",5,6);
-  writexy("º  I.    ->   Crear      º",5,7);
-  writexy("º  II.   ->   Abrir      º",5,8);
-  writexy("º  III.  ->   Listar     º",5,9);
-  writexy("º  IV.   ->   Buscar     º",5,10);
-  writexy("º  V.    ->   A¤adir     º",5,11);
-  writexy("º  VI.   ->   Ordenar    º",5,12);
-  writexy("º  VII.  ->   Borrar     º",5,13);
-  writexy("º  VIII. ->   Salir      º",5,14);
-  writexy("ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹",5,15);
-  writexy("º                        º",5,16);
-  writexy("ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼",5,17);
+  writexy("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»",5,4);
+  writexy("ï¿½  MENU                  ï¿½",5,5);
+  writexy("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹",5,6);
+  writexy("ï¿½  I.    ->   Crear      ï¿½",5,7);
+  writexy("ï¿½  II.   ->   Abrir      ï¿½",5,8);
+  writexy("ï¿½  III.  ->   Listar     ï¿½",5,9);
+  writexy("ï¿½  IV.   ->   Buscar     ï¿½",5,10);
+  writexy("ï¿½  V.    ->   Aï¿½adir     ï¿½",5,11);
+  writexy("ï¿½  VI.   ->   Ordenar    ï¿½",5,12);
+  writexy("ï¿½  VII.  ->   Borrar     ï¿½",5,13);
+  writexy("ï¿½  VIII. ->   Salir      ï¿½",5,14);
+  writexy("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹",5,15);
+  writexy("ï¿½                        ï¿½",5,16);
+  writexy("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼",5,17);
   gotoxy(7,16);
   printf("%s",path_global);
   switch(pos)
@@ -1097,11 +1097,11 @@ char aux;
   case 11: gotoxy(k,pos);
 	   textcolor(CYAN);
 	   textbackground(BLACK);
-	   cprintf(" A¤adir ");
+	   cprintf(" Aï¿½adir ");
 	   aux=getch();
 	   textcolor(7);
 	   gotoxy(k,pos);
-	   cprintf(" A¤adir ");
+	   cprintf(" Aï¿½adir ");
 	   break;
   case 12: gotoxy(k,pos);
 	   textcolor(CYAN);
